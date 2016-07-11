@@ -1,0 +1,154 @@
+[
+    {
+        "sku":"apl",
+        "name": "Apple",
+        "description":  "Eat one every day to keep the doctor away!",
+        "imageUrl": "apl",
+        "price": 12,
+        "calories":90,
+        "extras": [{
+            "nutrientName": "Carotenoid",
+            "value": 0
+        },{
+            "nutrientName": "Fiber",
+            "value": 2
+        },{
+            "nutrientName": "Folates",
+            "value": 0
+        },{
+            "nutrientName": "Potassium",
+            "value": 1
+        },{
+            "nutrientName": "Vitamin",
+            "value": 2
+        }
+        
+        ]
+  },{
+        "sku":"avo",
+        "name": "Avocado",
+        "description":  "Guacamole anyone?",
+        "imageUrl": "avc",
+        "price": 20,
+        "calories": 80,
+        "extras": [{
+            "nutrientName": "Carotenoid",
+            "value": 1
+        },{
+            "nutrientName": "Fiber",
+            "value": 3
+        },{
+            "nutrientName": "Folates",
+            "value": 2
+        },{
+            "nutrientName": "Potassium",
+            "value": 4
+        },{
+            "nutrientName": "Vitamin",
+            "value": 0
+        }
+        
+        ]
+  },{
+        "sku":"ban",
+        "name": "Banana",
+        "description":  "These are rich in Potassium and easy to peel.",
+        "imageUrl": "ban",
+        "price": 20,
+        "calories": 80,
+        "extras": [{
+            "nutrientName": "Carotenoid",
+            "value": 1
+        },{
+            "nutrientName": "Fiber",
+            "value": 3
+        },{
+            "nutrientName": "Folates",
+            "value": 2
+        },{
+            "nutrientName": "Potassium",
+            "value": 4
+        },{
+            "nutrientName": "Vitamin",
+            "value": 0
+        }
+        
+        ]
+  },{
+        "sku":"ctp",
+        "name": "Cantaloupe",
+        "description":  "Delicious and refreshing",
+        "imageUrl": "ctp",
+        "price": 20,
+        "calories": 80,
+        "extras": [{
+            "nutrientName": "Carotenoid",
+            "value": 1
+        },{
+            "nutrientName": "Fiber",
+            "value": 3
+        },{
+            "nutrientName": "Folates",
+            "value": 2
+        },{
+            "nutrientName": "Potassium",
+            "value": 4
+        },{
+            "nutrientName": "Vitamin",
+            "value": 0
+        }
+        
+        ]
+  },{
+        "sku":"gua",
+        "name": "Guava",
+        "description":  "Exotic, fragrant, tasty!",
+        "imageUrl": "gua",
+        "price": 20,
+        "calories": 80,
+        "extras": [{
+            "nutrientName": "Carotenoid",
+            "value": 1
+        },{
+            "nutrientName": "Fiber",
+            "value": 3
+        },{
+            "nutrientName": "Folates",
+            "value": 2
+        },{
+            "nutrientName": "Potassium",
+            "value": 4
+        },{
+            "nutrientName": "Vitamin",
+            "value": 0
+        }
+        
+        ]
+  },{
+        "sku":"grp",
+        "name": "Grape",
+        "description":  "Wine is great, but grapes are even better",
+        "imageUrl": "grp",
+        "price": 20,
+        "calories": 80,
+        "extras": [{
+            "nutrientName": "Carotenoid",
+            "value": 1
+        },{
+            "nutrientName": "Fiber",
+            "value": 3
+        },{
+            "nutrientName": "Folates",
+            "value": 2
+        },{
+            "nutrientName": "Potassium",
+            "value": 4
+        },{
+            "nutrientName": "Vitamin",
+            "value": 0
+        }
+        
+        ]
+  }
+    
+]
