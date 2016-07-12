@@ -1,12 +1,7 @@
 'use strict';
-
-// the storeController contains two objects:
-// - store: contains the product list
-// - cart: the shopping cart object
-function storeController($scope, $routeParams,$http,$rootScope,Cart) {
+function storeController($scope, $routeParams,$http,Cart) {
     $scope.cart = Cart.getCart("ShoppingCart");
-    
-    // use routing to pick the selected product
+    //----------------------------when we click on name of product to see the detail then using $rootParams get the data from url and display ---------------------------------//
     if ($routeParams.productSku != null) {
         $http({
             method: 'GET',
@@ -19,6 +14,7 @@ function storeController($scope, $routeParams,$http,$rootScope,Cart) {
             });
           })
     }
+    //------------------ display all the product in store.htm  page -------------------------------------//
     $scope.initialize = function(){
         $http({
             method: 'GET',
@@ -28,11 +24,7 @@ function storeController($scope, $routeParams,$http,$rootScope,Cart) {
         })
     };
     
-    $scope.send = function(data){
-        console.log(data);
-        $rootScope.selectedItem = data;
-    };
-    
+    //---------------------------------used for displaying the detail of product ----------------//
     $scope.dvaCaption = [
         "Negligible",
         "Low",

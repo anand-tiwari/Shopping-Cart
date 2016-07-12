@@ -1,5 +1,6 @@
 'use strict';
 var storeApp = angular.module('ShoppingCart', []).
+//---------------- $routeProvider bind the connection between view (html) and controller(.js) -----//
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/store', {
@@ -18,7 +19,10 @@ var storeApp = angular.module('ShoppingCart', []).
         redirectTo: '/store'
       });
 }])
+//---------- contails all operational function of cart ---------------------------------------- //
 .service('Cart', ['$rootScope', function ($rootScope) {
+    
+    //--------------- Initialize shopping cart ----------------------//
       this.getCart = function(cartName){
             this.cartName = cartName;
             this.clearCart = false;
@@ -37,7 +41,8 @@ var storeApp = angular.module('ShoppingCart', []).
             });
               return this;
         };
-        
+    
+    //------ load data from localStorage of Browser --------------------------------------------//
         this.loadItems = function(){
             var items = localStorage != null ? localStorage[this.cartName + "_items"] : null;
             if (items != null && JSON != null) {
@@ -56,7 +61,9 @@ var storeApp = angular.module('ShoppingCart', []).
                 }
             }
         };
-        
+    
+    
+    //----- Add new item /(increase/decrease) already selected  item to cart -----------------------------//
         this.addItem = function (sku, name, price, quantity) {
             quantity = this.toNumber(quantity);
             if (quantity != 0) {
@@ -85,22 +92,29 @@ var storeApp = angular.module('ShoppingCart', []).
             }
         };
         
+    
+    // ----  number converter function ------------------------------------//
         this.toNumber = function (value) {
             value = value * 1;
             return isNaN(value) ? 0 : value;
         };
     
+    
+    
+    //--------------- save item to localStorage ---------------------------//
         this.saveItems = function() {
              if (localStorage != null && JSON != null) {
                  localStorage[this.cartName + "_items"] = JSON.stringify(this.items);
              }
         };
     
+    //--------------------clear the localStorage and cart --------------------------//
         this.clearItems = function() {
              this.items = [];
              this.saveItems();
         };
-
+    
+    //--- get total price of products--------------------------------//
         this.getTotalPrice = function (sku) {
             var total = 0;
             for (var i = 0; i < this.items.length; i++) {
@@ -112,7 +126,7 @@ var storeApp = angular.module('ShoppingCart', []).
             return total;
         }
 
-        // get the total price for all items currently in the cart
+        //-----------get total Quantity of products---------------------//
         this.getTotalCount = function (sku) {
             var count = 0;
             for (var i = 0; i < this.items.length; i++) {
@@ -123,7 +137,8 @@ var storeApp = angular.module('ShoppingCart', []).
             }
             return count;
         };
-        
+    
+        //----- create a new cartItem to store in localStorage --------------//
         function cartItem(sku, name, price, quantity) {
             this.sku = sku;
             this.name = name;

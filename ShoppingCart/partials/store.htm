@@ -20,7 +20,7 @@
     <tr ng-repeat="product in products | orderBy:'name' | filter:search" >
         <td class="tdCenter"><img ng-src="img/products/{{product.imageUrl}}.jpg" alt="{{product.name}}" /></td>
         <td>
-            <a href="#/products/{{product.imageUrl}}" ng-click="send(product)"><b>{{product.name}}</b></a><br />
+            <a href="#/products/{{product.imageUrl}}"><b>{{product.name}}</b></a><br />
             {{product.description}}
         </td>
         <td class="tdRight">
