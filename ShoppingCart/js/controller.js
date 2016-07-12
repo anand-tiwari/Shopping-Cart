@@ -5,7 +5,7 @@ function storeController($scope, $routeParams,$http,Cart) {
     if ($routeParams.productSku != null) {
         $http({
             method: 'GET',
-            url: '../products.json'
+            url: 'products.json'
             }).then(function successCallback(response) {
             angular.forEach(response.data,function(value,key){
                 if(value.imageUrl==$routeParams.productSku){
@@ -18,7 +18,7 @@ function storeController($scope, $routeParams,$http,Cart) {
     $scope.initialize = function(){
         $http({
             method: 'GET',
-            url: '../products.json'
+            url: 'products.json'
         }).then(function successCallback(response) {
             $scope.products = response.data;
         })
