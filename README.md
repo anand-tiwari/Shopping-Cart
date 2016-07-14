@@ -3,7 +3,7 @@
 To run the app -
 go to setting -
 GitHub Pages
- Your site is published at https://anand-tiwari.github.io/Resume/
+ Your site is published at https://anand-tiwari.github.io/Shopping-Cart/
  open the link 
 
 Functionality of Shopping Cart:-
