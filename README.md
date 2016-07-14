@@ -7,9 +7,9 @@ GitHub Pages
  open the link 
 
 Functionality of Shopping Cart:-
-1. click on add to cart button then product is added to cart.
-2. To see the detail of product click on the name of product
-    it will open a page with detail description of product and three button -
+1. click on add to cart button then product is added to cart.  
+2. To see the detail of product click on the name of product  
+    it will open a page with detail description of product and three button -  
      a. Increase the Quantity of product. 
      b. Discard the product from cart 
      c. Back to the store 
